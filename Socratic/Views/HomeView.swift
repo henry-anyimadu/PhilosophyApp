@@ -71,7 +71,7 @@ struct HomeView: View {
                 }
                 .padding()
             }
-            .navigationTitle("PhiloLearn")
+            .navigationTitle("Socratic")
         }
     }
 }

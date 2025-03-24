@@ -31,11 +31,11 @@ struct SkillTreeView: View {
             // Connection lines
             Path { path in
                 // Simplified for MVP - would be more dynamic based on actual concept relationships
-                path.move(to: CGPoint(x: 100, y: 0))
-                path.addLine(to: CGPoint(x: 60, y: 30))
+                path.move(to: CGPoint(x: 120, y: 0))
+                path.addLine(to: CGPoint(x: 80, y: 30))
                 
-                path.move(to: CGPoint(x: 100, y: 0))
-                path.addLine(to: CGPoint(x: 140, y: 30))
+                path.move(to: CGPoint(x: 120, y: 0))
+                path.addLine(to: CGPoint(x: 160, y: 30))
             }
             .stroke(Color.gray, style: StrokeStyle(lineWidth: 2, dash: [5]))
             .frame(height: 30)
