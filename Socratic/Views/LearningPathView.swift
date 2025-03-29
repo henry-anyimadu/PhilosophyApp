@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct LearningPathView: View {
-    @EnvironmentObject var appState: AppState
     @State private var selectedBranch: PhilosophyBranch = .ethics
     
     var body: some View {
@@ -29,24 +28,26 @@ struct LearningPathView: View {
                 
                 // Skill tree visualization
                 ScrollView {
-                    VStack(alignment: .leading, spacing: 24) {
+                    VStack(alignment: .leading) {
                         Text(selectedBranch.rawValue)
                             .font(.title)
                             .fontWeight(.bold)
-                            .padding(.horizontal)
+                            .padding(.horizontal, 40)
                         
                         // Simplified skill tree for MVP
                         SkillTreeView(branch: selectedBranch)
-                            .padding(.horizontal)
+                            .environmentObject(AppState())
+                            .padding(.horizontal, -40)
                     }
                     .padding(.vertical)
                 }
             }
             .navigationTitle("Learning Path")
         }
+        .preferredColorScheme(.dark)
     }
 }
-//
-//#Preview {
-//    LearningPathView()
-//}
+
+#Preview {
+    LearningPathView()
+}

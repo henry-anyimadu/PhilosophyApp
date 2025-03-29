@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MainTabView: View {
+    @StateObject var appState: AppState
     @State private var selectedTab = 0
     
     var body: some View {
@@ -30,9 +31,11 @@ struct MainTabView: View {
                 }
                 .tag(2)
         }
+        .accentColor(.white) // Set tab item tint color
+        .background(AppTheme.background)
     }
 }
 
 #Preview {
-    MainTabView()
+    MainTabView(appState: AppState())
 }

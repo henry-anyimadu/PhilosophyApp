@@ -69,6 +69,7 @@ struct HomeView: View {
                         }
                     }
                 }
+                .preferredColorScheme(.dark)
                 .padding()
             }
             .navigationTitle("Socratic")
@@ -78,4 +79,5 @@ struct HomeView: View {
 
 #Preview {
     HomeView()
+        .environmentObject(AppState())
 }

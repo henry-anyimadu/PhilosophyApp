@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
-    
     @StateObject var appState: AppState
+    
     var body: some View {
-        MainTabView()
+        MainTabView(appState: AppState())
             .environmentObject(appState)
+            .background(AppTheme.background)
+            .preferredColorScheme(.dark)
     }
 }
 #Preview {
