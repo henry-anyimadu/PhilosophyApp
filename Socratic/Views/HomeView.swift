@@ -72,7 +72,7 @@ struct HomeView: View {
                 .preferredColorScheme(.dark)
                 .padding()
             }
-            .navigationTitle("Socratic")
+            .navigationTitle("Home")
         }
     }
 }

@@ -9,8 +9,8 @@ import SwiftUI
 
 struct AppTheme {
     // Base colors
-    static let background = Color.black
-    static let secondaryBackground = Color(red: 0.15, green: 0.15, blue: 0.15) // Dark gray
+    static let background = Color.gray
+    static let secondaryBackground = Color(red: 0.15, green: 0.15, blue: 0.95) // Dark gray
     static let tertiaryBackground = Color(red: 0.2, green: 0.2, blue: 0.2) // Slightly lighter gray
     
     // Text colors

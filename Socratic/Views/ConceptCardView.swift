@@ -41,7 +41,7 @@ struct ConceptCardView: View {
                             .frame(width: min(CGFloat(concept.completionPercentage) * geometry.size.width, geometry.size.width), height: 6)
                             .foregroundColor(concept.branch.color)
                     }
-                    .cornerRadius(3)
+                    .cornerRadius(2)
                 }
                 .frame(height: 6)
             }
@@ -53,7 +53,7 @@ struct ConceptCardView: View {
         }
         .padding()
         .background(Color(.systemGray6))
-        .cornerRadius(12)
+        .cornerRadius(2)
     }
 }
 //#Preview {

@@ -11,12 +11,12 @@ struct ContentView: View {
     @StateObject var appState: AppState
     
     var body: some View {
-        MainTabView(appState: AppState())
-            .environmentObject(appState)
-            .background(AppTheme.background)
-            .preferredColorScheme(.dark)
-    }
-}
+            MainTabView(appState: AppState())
+                .environmentObject(appState)
+                .background(AppTheme.background)
+                .preferredColorScheme(.dark)
+        }
+} 
 #Preview {
     ContentView(appState: AppState())
 }
